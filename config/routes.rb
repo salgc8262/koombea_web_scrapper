@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_scope :user do
+    get '/logout', to: 'devise/sessions#destroy', as: 'logout'
+  end
+
+  resources :pages do
+    resources :links, only: [:index]
+  end
+
+  root to: 'pages#index'
 end
