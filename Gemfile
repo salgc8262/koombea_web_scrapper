@@ -36,6 +36,8 @@ gem 'devise'
 # Will_paginate provides easy pagination for large result sets
 gem 'will_paginate'
 
+gem 'rspec-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
