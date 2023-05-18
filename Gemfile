@@ -27,6 +27,15 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Nokogiri Simplifies HTML and XML parsing and manipulation
+gem 'nokogiri'
+
+# Devise Adds flexible and customizable authentication features
+gem 'devise'
+
+# Will_paginate provides easy pagination for large result sets
+gem 'will_paginate'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
