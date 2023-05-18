@@ -1,0 +1,13 @@
+<h1>New Page</h1>
+
+<%= form_with(model: @page, url: pages_path, class: 'form') do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Create Page', class: 'btn btn-primary' %>
+    <%= link_to 'Cancel', pages_path, class: 'btn btn-secondary' %>
+  </div>
+<% end %>

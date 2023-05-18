@@ -1,0 +1,22 @@
+<h1><%= @page.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @links_paginated.each do |link| %>
+      <tr>
+        <td><%= link.name %></td>
+        <td><%= link.url %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate @links_paginated %>
+
+<%= link_to 'Back', pages_path, class: 'btn btn-primary' %>
